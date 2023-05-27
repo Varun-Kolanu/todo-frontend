@@ -33,10 +33,10 @@ export const Register = () => {
     return (
         <div id="register">
             <section>
-                <form onSubmit={submitHandler}>
-                    <input value={username} onChange={(e) => { setName(e.target.value) }} type="text" placeholder='Name' required />
-                    <input value={email} onChange={(e) => { setEmail(e.target.value) }} type="email" placeholder='Email' required />
-                    <input value={password} onChange={(e) => { setPassword(e.target.value) }} type="password" placeholder='Password' required />
+                <form onSubmit={submitHandler} className='lrform'>
+                    <input value={username} onChange={(e) => { setName(e.target.value) }} type="text" placeholder='Name' required className='lrinput'/>
+                    <input value={email} onChange={(e) => { setEmail(e.target.value) }} type="email" placeholder='Email' required className='lrinput'/>
+                    <input value={password} onChange={(e) => { setPassword(e.target.value) }} type="password" placeholder='Password' required className='lrinput'/>
                     <button type='submit' className="primaryBtn">Sign Up</button>
                     <h4>Or</h4>
                     <Link to={"/login"} style={{ textDecoration: 'none' }}> <span className='secondaryBtn'> Login</span></Link>
