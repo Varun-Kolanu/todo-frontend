@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,300&display=swap");
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
+    transition-property: background-color ;
+    transition-duration: 0.5s;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #444444;
+    height: 50px;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-right: 6rem;
+}
+
+nav ul li, button {
+    margin-right: 3rem;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:70px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    background-color: #444444;
+    border: none;
+}
+
+button {
+    font-size: 1rem;
+}
+
+nav ul li:hover, #logout:hover {
+    background-color: white;
+    color: #444444;
+}
+
+#logo {
+    margin-left: 3rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#login, #register {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #aaaaaa;
+}
+
+#home {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #aaaaaa;
+}
+
+.todosContainer {
+    position: relative;
+    top: 100px;
+}
+
+.todo {
+    width: 800px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: white;
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    justify-content: space-between;
+}
+
+input.check {
+    height: 1rem;
+    width: 1rem;
+    accent-color: #777;
+}
+
+.lrform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 400px;
+    position: relative;
+    top: 50px;
+    border-radius: 20px;
+    height: 300px;
+    justify-content: space-evenly;
+}
+
+.hform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 800px;
+    position: relative;
+    top: 50px;
+    border-radius: 20px;
+    justify-content: space-evenly;
+    height: 200px;
+}
+
+.lrinput {
+    /* margin: 8px; */
+    height: 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    outline: none;
+    border: 1px solid gray;
+    width: 80%;
+}
+
+.hform input {
+    height: 2rem;
+    border-radius: 1rem;
+    outline: none;
+    border: 1px solid gray;
+    width: 75%;
+    padding-left: 1rem;
+}
+
+.lrform .primaryBtn{
+    width: 40%;
+    height: 2rem;
+    border-radius: 15px;
+    border: none;
+    background-color: #444444;
+    color: white;
+    cursor: pointer;
+    margin: -8px;
+}
+
+.hform .primaryBtn {
+    width: 20%;
+    height: 2rem;
+    border-radius: 15px;
+    border: none;
+    background-color: #444444;
+    color: white;
+    cursor: pointer;
+    margin: -8px;
+}
+
+:disabled {
+    background-color: #aaaaaa;
+}
+
+.secondaryBtn {
+    color: black;
+    cursor: pointer;
+    margin: -8px;
+}
+
+#loader {
+    height: 100vh;
+    width: 100vw;
+    background-color: #cccccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    overflow: hidden;
+}
